@@ -111,3 +111,40 @@
 
 /* Existing keyframes and styles for text and button animations remain unchanged */
 
+
+/* Background styling for the products section */
+.container.products-section {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 50px 15px; /* Spacing around the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow */
+    margin-top: 20px; /* Space above the section */
+  }
+  
+  /* Card styling for individual products */
+  .card {
+    transition: transform .2s; /* Animation for hover effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge cards on hover */
+  }
+  
+  .card-img-top {
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the area */
+  }
+  
+  .card-title {
+    color: #007bff; /* Bootstrap primary color for titles */
+  }
+  
+  .card-text {
+    font-size: 0.9rem; /* Smaller font size for text */
+  }
+  
+  /* Ensuring the text and images are centered */
+  .card-body {
+    text-align: center;
+  }
+  

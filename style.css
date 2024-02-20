@@ -147,4 +147,111 @@
   .card-body {
     text-align: center;
   }
+
+
+  /* Custom Styles */
+
+/* Custom Styles */
+
+/* Custom Styles for Section with Image and Text */
+
+/* Enhanced section styling with a top and bottom border as separators */
+.section-with-image-text {
+    padding: 60px 0; /* Adjust the padding as needed */
+    background-color: #f8f9fa; /* Light background for the section */
+    border-top: 6px solid #FFC000; /* Blue top border as a separator */
+    border-bottom: 3px solid #C55A11; /* Blue bottom border as a separator */
+  }
   
+  /* Styling for the heading */
+  .section-with-image-text h2 {
+    font-size: 4rem; /* Bigger font size for the heading */
+    margin-bottom: 20px; /* Margin for spacing between the heading and paragraph */
+  }
+  
+  /* Styling for the paragraph */
+  .section-with-image-text p {
+    font-size: 1.7rem; /* Slightly larger font size for the paragraph */
+    color: #333; /* Darker text color for better readability */
+    line-height: 1.5; /* Improved line height for better readability */
+    font-family: Bahnschrift Light;
+  }
+  
+  /* Image and text styling for better alignment and spacing */
+  .img-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between image and text as needed */
+  }
+  
+  .img-fluid {
+    max-width: 80%; /* Making the image a little smaller */
+    height: auto;
+  }
+  
+  .text-block {
+    max-width: 50%;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .img-text-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .text-block, .img-fluid {
+      max-width: 100%;
+    }
+  }
+  
+  /* Enhanced section styling with a top and bottom border as separators */
+.section-with-image-text-wedistrib {
+    padding: 60px 0; /* Adjust the padding as needed */
+    background-color: #f8f9fa; /* Light background for the section */
+    border-top: 3px solid #C55A11; /* Blue top border as a separator */
+  }
+  
+  /* Styling for the heading */
+  .section-with-image-text-wedistrib h2 {
+    font-size: 4rem; /* Bigger font size for the heading */
+    margin-bottom: 20px; /* Margin for spacing between the heading and paragraph */
+  }
+  
+  /* Styling for the paragraph */
+  .section-with-image-text-wedistrib p {
+    font-size: 1.7rem; /* Slightly larger font size for the paragraph */
+    color: #333; /* Darker text color for better readability */
+    line-height: 1.5; /* Improved line height for better readability */
+    font-family: Bahnschrift Light;
+  }
+  
+  /* Image and text styling for better alignment and spacing */
+  .img-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap between image and text as needed */
+  }
+  
+  .img-fluid {
+    max-width: 80%; /* Making the image a little smaller */
+    height: auto;
+  }
+  
+  .text-block {
+    max-width: 50%;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .img-text-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .text-block, .img-fluid {
+      max-width: 100%;
+    }
+  }

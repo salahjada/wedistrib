@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- AOS Animation library CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>WEDISTRIB</title>
 </head>
 <body>
@@ -48,14 +49,61 @@
           <a href="#produits"><button class="btn btn-primary product-btn">
             <i class="fas fa-box-open"></i> Nos Produits
         </button></a>
-        
       </div>
     </section>
 
+<!-- Section with image on the left and text on the right with top and bottom separators -->
+<div class="container section-with-image-text">
+  <div class="row align-items-center" data-aos="fade-up">
+    <div class="col-md-6 img-text-wrapper">
+      <img src="images/histoiredebic.png" class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="col-md-6 text-block">
+      <h2><span style="color: black;">HISTOIRE DE</span> <span style="color: #FFC000;">BIC®</span></h2>
+      <div class="separator"></div> <!-- Separator -->
+      <p>L’histoire de BIC® a commencé simplement avec une vision et un stylo. L'objectif était de créer un produit répondant à un besoin fondamental des consommateurs : un outil pour écrire facilement et en douceur. Le résultat fût bien plus : BIC® démocratisa l'art de l'écriture et donna à chacun le pouvoir de s’exprimer à sa façon.!
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Section with image on the right and text on the left with top and bottom separators -->
+<div class="container section-with-image-text-wedistrib">
+  <div class="row align-items-center" data-aos="fade-up">
+    <!-- Text Block on the Left -->
+    <div class="col-md-6 text-block">
+      <h2><span style="color: #C55A11;">WEDISTRIB</span></h2>
+      <div class="separator"></div> <!-- Separator -->
+      <p>L’histoire de BIC® a commencé simplement avec une vision et un stylo. L'objectif était de créer un produit répondant à un besoin fondamental des consommateurs : un outil pour écrire facilement et en douceur. Le résultat fût bien plus : BIC® démocratisa l'art de l'écriture et donna à chacun le pouvoir de s’exprimer à sa façon!</p>
+    </div>
+    <!-- Image Block on the Right -->
+    <div class="col-md-6 img-text-wrapper">
+      <img src="images/wedistrib.png" class="img-fluid" alt="Responsive image">
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Bootstrap JS & AOS Animation library JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation library JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!--
     <div class="container mt-5" id="produits">
       <h2 class="text-center mb-4">Our Products</h2>
       <div class="row">
-        <!-- Product 1 -->
         <div class="col-md-3 col-sm-6 mb-4">
           <div class="card">
             <img src="images/products/marker.png" class="card-img-top" alt="Product 1">
@@ -65,7 +113,6 @@
             </div>
           </div>
         </div>
-        <!-- Product 2 -->
         <div class="col-md-3 col-sm-6 mb-4">
           <div class="card">
             <img src="images/products/rasoir1_femme.png" class="card-img-top" alt="Product 2">
@@ -75,7 +122,6 @@
             </div>
           </div>
         </div>
-        <!-- Product 2 -->
         <div class="col-md-3 col-sm-6 mb-4">
           <div class="card">
             <img src="images/products/rasoir2_homme.png" class="card-img-top" alt="Product 2">
@@ -85,7 +131,6 @@
             </div>
           </div>
         </div>
-        <!-- Product 2 -->
         <div class="col-md-3 col-sm-6 mb-4">
           <div class="card">
             <img src="images/products/rasoir3_homme.png" class="card-img-top" alt="Product 2">
@@ -95,7 +140,6 @@
             </div>
           </div>
         </div>
-        <!-- Product 2 -->
         <div class="col-md-3 col-sm-6 mb-4">
           <div class="card">
             <img src="images/products/rasoir4_femme (1).png" class="card-img-top" alt="Product 2">
@@ -105,7 +149,6 @@
             </div>
           </div>
         </div>
-        <!-- Product 2 -->
         <div class="col-md-3 col-sm-6 mb-4">
           <div class="card">
             <img src="images/products/rasoir4_femme.png" class="card-img-top" alt="Product 2">
@@ -115,7 +158,6 @@
             </div>
           </div>
         </div>
-        <!-- Product 2 -->
         <div class="col-md-3 col-sm-6 mb-4">
           <div class="card">
             <img src="images/products/rasoir1_femme.png" class="card-img-top" alt="Product 2">
@@ -125,7 +167,6 @@
             </div>
           </div>
         </div>
-        <!-- Product 2 -->
         <div class="col-md-3 col-sm-6 mb-4">
           <div class="card">
             <img src="images/products/rasoir3_homme.png" class="card-img-top" alt="Product 2">
@@ -135,17 +176,6 @@
             </div>
           </div>
         </div>
-        <!-- Add more products here following the same structure -->
-        <!-- Product 3 to Product 8 (Remember to replace the src of img with your actual product images and update the titles and descriptions) -->
       </div>
     </div>
-    
-
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+  -->

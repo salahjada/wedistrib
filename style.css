@@ -304,107 +304,77 @@
 
   /* Custom Styles */
 
-/* Custom Styles */
-
 /* Custom Styles for Section with Image and Text */
 
-/* Enhanced section styling with a top and bottom border as separators */
+.section-with-image-text, .section-with-image-text-wedistrib {
+    padding: 60px 0; /* Adjust the padding as needed */
+    background-color: #f8f9fa; /* Light background for the section */
+}
+
 .section-with-image-text {
-    padding: 60px 0; /* Adjust the padding as needed */
-    background-color: #f8f9fa; /* Light background for the section */
-    border-top: 6px solid #FFC000; /* Blue top border as a separator */
-    border-bottom: 3px solid #C55A11; /* Blue bottom border as a separator */
-  }
-  
-  /* Styling for the heading */
-  .section-with-image-text h2 {
-    font-size: 4rem; /* Bigger font size for the heading */
-    margin-bottom: 20px; /* Margin for spacing between the heading and paragraph */
-  }
-  
-  /* Styling for the paragraph */
-  .section-with-image-text p {
-    font-size: 1.7rem; /* Slightly larger font size for the paragraph */
-    color: #333; /* Darker text color for better readability */
-    line-height: 1.5; /* Improved line height for better readability */
-    font-family: Bahnschrift Light;
-  }
-  
-  /* Image and text styling for better alignment and spacing */
-  .img-text-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px; /* Adjust the gap between image and text as needed */
-  }
-  
-  .img-fluid {
-    max-width: 80%; /* Making the image a little smaller */
-    height: auto;
-  }
-  
-  .text-block {
-    max-width: 50%;
-  }
-  
-  /* Responsive design adjustments */
-  @media (max-width: 768px) {
-    .img-text-wrapper {
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    .text-block, .img-fluid {
-      max-width: 100%;
-    }
-  }
-  
-  /* Enhanced section styling with a top and bottom border as separators */
+    border-top: 6px solid #FFC000; /* Specific top border as a separator */
+    border-bottom: 3px solid #C55A11; /* Specific bottom border as a separator */
+}
+
 .section-with-image-text-wedistrib {
-    padding: 60px 0; /* Adjust the padding as needed */
-    background-color: #f8f9fa; /* Light background for the section */
-    border-top: 3px solid #C55A11; /* Blue top border as a separator */
-  }
-  
-  /* Styling for the heading */
-  .section-with-image-text-wedistrib h2 {
-    font-size: 3rem; /* Bigger font size for the heading */
-    margin-bottom: 20px; /* Margin for spacing between the heading and paragraph */
-  }
-  
-  /* Styling for the paragraph */
-  .section-with-image-text-wedistrib p {
-    font-size: 1.3rem; /* Slightly larger font size for the paragraph */
-    color: #333; /* Darker text color for better readability */
-    line-height: 1.5; /* Improved line height for better readability */
-    font-family: Bahnschrift Light;
-  }
-  
-  /* Image and text styling for better alignment and spacing */
-  .img-text-wrapper {
+    border-top: 3px solid #C55A11; /* Specific top border as a separator for another section */
+}
+
+.section-with-image-text h2, .section-with-image-text-wedistrib h2 {
+    font-size: 3rem; /* Keep the adjusted font size */
+    margin-bottom: 20px; /* Maintain spacing between the heading and paragraph */
+    padding: 0 15px; /* Add horizontal padding for the heading */
+}
+
+.section-with-image-text p, .section-with-image-text-wedistrib p {
+    font-size: 1.8rem; /* Keep the adjusted font size */
+    color: #333; /* Maintain the text color for readability */
+    line-height: 1.5; /* Maintain line height for better readability */
+    font-family: "Bahnschrift Light", sans-serif;
+    padding: 0 15px; /* Add horizontal padding for the paragraph */
+    margin-bottom: 20px; /* Add some bottom margin for spacing after the paragraph */
+}
+
+/* Image and text wrapper styling */
+.img-text-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px; /* Adjust the gap between image and text as needed */
-  }
-  
-  .img-fluid {
-    max-width: 80%; /* Making the image a little smaller */
+}
+
+.img-fluid {
+    max-width: 100%; /* Ensure the image is fully responsive */
     height: auto;
-  }
-  
-  .text-block {
-    max-width: 50%;
-  }
-  
-  /* Responsive design adjustments */
-  @media (max-width: 768px) {
+}
+
+.text-block {
+    max-width: 100%;
+}
+
+/* Responsive design adjustments for devices with widths up to 768px */
+@media (max-width: 768px) {
     .img-text-wrapper {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column-reverse; /* Stack image below text for smaller screens */
+        text-align: center;
     }
-    
-    .text-block, .img-fluid {
-      max-width: 100%;
+
+    .img-fluid {
+        max-width: 80%; /* Adjust image width on smaller screens for better aesthetics */
+        margin: 0 auto; /* Center the image */
     }
-  }
+
+    .text-block {
+        max-width: 100%; /* Allow text block to use full width */
+    }
+
+    .section-with-image-text h2, .section-with-image-text-wedistrib h2 {
+        font-size: 2.5rem; /* Slightly smaller font size on smaller screens */
+        padding: 10px; /* Adjust padding to ensure text doesn't touch the edges */
+    }
+
+    .section-with-image-text p, .section-with-image-text-wedistrib p {
+        font-size: 1.3rem; /* Adjusted font size for smaller screens */
+        padding: 10px; /* Adjust padding to ensure text doesn't touch the edges */
+    }
+}

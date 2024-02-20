@@ -151,6 +151,159 @@
 
   /* Custom Styles */
 
+  .hero-section h1 {
+    font-size: 2.5rem; /* Larger font size for the headline */
+    font-weight: 700; /* Bold font weight for more impact */
+    margin-bottom: 0.5rem; /* Adjust spacing below the headline */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+.hero-section p {
+    font-size: 1.25rem; /* Larger font size for the description */
+    margin-bottom: 1.5rem; /* More space above the CTA button */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+/* Custom Product Button Styling */
+.btn-primary.product-btn {
+    color: #fff; /* Text color */
+    background-color: #C67526; /* Button background color, matching navbar */
+    border-color: #C67526; /* Button border color */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* UPPERCASE text */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-primary.product-btn:hover, .btn-primary.product-btn:focus {
+    background-color: #b56422; /* Slightly darker on hover/focus */
+    border-color: #b56422; /* Border color on hover/focus */
+    transform: scale(1.05); /* Slightly increase size on hover/focus */
+}
+
+.btn-primary.product-btn .fas {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+
+@media (min-width: 768px) {
+    .hero-section h1 {
+        font-size: 4rem; /* Even larger font size on larger screens */
+    }
+
+    .hero-section p {
+        font-size: 1.75rem; /* Increase description size on larger screens */
+    }
+}
+.navbar-custom-color {
+    background-color: #F3AA40 !important; /* Override Bootstrap's default navbar color */
+}
+
+/* Custom Navbar Link Styling */
+.navbar-custom-color .navbar-nav .nav-link {
+    color: #fff; /* Light color for contrast against the dark background */
+    font-size: 1rem; /* Adjust the font size as needed */
+    font-weight: 500; /* Medium font weight for better readability */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Navbar Link Hover Effect */
+.navbar-custom-color .navbar-nav .nav-link:hover,
+.navbar-custom-color .navbar-nav .nav-link:focus {
+    color: #ffd700; /* Change color on hover/focus for visual feedback */
+    text-decoration: none; /* Remove underline on hover/focus */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section h1, .hero-section p, .hero-section .btn {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.hero-section h1 {
+    animation-delay: 0.5s; /* Start animation after 0.5 seconds */
+}
+
+.hero-section p {
+    animation-delay: 0.8s; /* Start animation after 0.8 seconds */
+}
+
+.hero-section .btn {
+    animation-delay: 1.1s; /* Start animation after 1.1 seconds */
+}
+
+/* Keyframes for background fade-in effect */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-section {
+    background: url('images/hero.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 15px;
+    animation: fadeInBackground 1.5s ease-out forwards; /* Apply fade-in effect */
+}
+
+/* Existing keyframes and styles for text and button animations remain unchanged */
+
+
+/* Background styling for the products section */
+.container.products-section {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 50px 15px; /* Spacing around the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow */
+    margin-top: 20px; /* Space above the section */
+  }
+  
+  /* Card styling for individual products */
+  .card {
+    transition: transform .2s; /* Animation for hover effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge cards on hover */
+  }
+  
+  .card-img-top {
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensure images cover the area */
+  }
+  
+  .card-title {
+    color: #007bff; /* Bootstrap primary color for titles */
+  }
+  
+  .card-text {
+    font-size: 0.9rem; /* Smaller font size for text */
+  }
+  
+  /* Ensuring the text and images are centered */
+  .card-body {
+    text-align: center;
+  }
+
+
+  /* Custom Styles */
+
 /* Custom Styles */
 
 /* Custom Styles for Section with Image and Text */
